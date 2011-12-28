@@ -21,7 +21,7 @@ font-family: "Reenie Beanie",arial,sans-serif;
 }
 
 #wrapper {
-width:700px;
+width:1000px;
 margin: 0 auto;
 padding: 0 30px;
 }
@@ -52,6 +52,8 @@ color: #fff;
 background-color: #369;
 border: .5em ridge #ffb; 
 background: url(http://i.imgur.com/1ETW5.png);
+width:890px;
+height:200px;
 }
 
 ul, li {
@@ -149,20 +151,36 @@ ul li:nth-child(3n){
   top:-5px;
   background:#ccf;
 }
-
-
 </style>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/jakecarpenter/startuporshutup/master/js/etherpad.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#pad").pad({
+                  'padId' : 'kRBXB8P1Ci',
+                  'host'  : 'http://notes.avaaz.org',
+                  'baseUrl' : '/'
+               });
+  $("#epframepad").css("width", "900px");
+  $("#epframepad").css("height", "600px");
+
+});  
+</script>
+ 
+  
 </head>
 
 <body>
 
 <div id="wrapper">
+<br>
 <center><img src="http://i.imgur.com/slI6X.png"></center>
 <p class="slogan">
 Dec. 28th - Jan. 12. We're getting things done. 
 </p>
+
 <div class="squares">
 <ul>
 	<li>
@@ -187,18 +205,14 @@ Dec. 28th - Jan. 12. We're getting things done.
 
 	</li>
 
-		<li>
-	
-			<h2>Behind The Scenes</h2>
-			<p><p><a href="http://notes.avaaz.org/kRBXB8P1Ci">Join us on Etherpad</a></p> </p>
-	
-	</li>
+		
 </div>
 
+<center><div id="pad">This is the pad</div></center>
 <p class="slogan">Can a group of individuals from the Hacker New community come together and use their wide variety of skills to start companies?
 </p>
+<br>
+
 </div>
-
-
 </body>
 </html>
