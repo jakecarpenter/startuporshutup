@@ -1,15 +1,239 @@
-<!doctype html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <title>Startup or Shutup</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-  <script src="js/etherpad.js"></script>
-  <script src="js/load-pad.js"></script>
+<link  href="http://fonts.googleapis.com/css?
+family=Reenie+Beanie:regular" rel="stylesheet" type="text/css">
 
+<title> Startup Or Shutup 2012 </title>
+<style type="text/css">
+body {
+font-family: "Reenie Beanie",arial,sans-serif;
+background: url(http://i.imgur.com/hUxoV.png);
+}
+
+p {
+line-height:20px;
+}
+
+br {
+line-height: 8px;
+font-family: "Reenie Beanie",arial,sans-serif;
+}
+
+#wrapper {
+width:1000px;
+margin: 0 auto;
+padding: 0 30px;
+}
+
+h1 {
+font-size: 100%;
+color: #fff;
+margin: 0 auto;
+padding: 2px 100px;
+font-family: "Reenie Beanie",arial,sans-serif;
+font-size: 46px;
+line-height: 60px;
+border: 5px dashed #fff;
+background-color:#369;
+}
+
+.slogan {
+color: #036;
+padding: 0 50px;
+font-size: 2em;
+}
+
+.squares {
+font-family:arial,sans-serif;
+font-size: 100%;
+margin: 3em;
+color: #fff;
+background-color: #369;
+border: .5em ridge #ffb; 
+background: url(http://i.imgur.com/1ETW5.png);
+width:890px;
+height:200px;
+}
+
+ul, li {
+list-style: none;
+}
+
+ul {
+overflow: hidden;
+padding: 1em;
+}
+
+ul li{
+color: #000;
+background: #ffc;
+display: block;
+height: 11em;
+width: 11em;
+padding: 1.1em;
+-moz-box-shadow: 5x 5px 7x rgba(33,33,33,1);
+-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+-webkit-transform:rotate(-6deg);
+-o-transform:rotate(-6deg);
+-moz-transofrm:rotate(-6deg);
+}
+
+.bottom {
+font-size: 2em;
+color: #369;
+background: #ccf;
+display: block;
+width: 800px;
+padding: 1.1em;
+-moz-box-shadow: 5x 5px 7x rgba(33,33,33,1);
+-webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+-webkit-transform:rotate(-6deg);
+-o-transform:rotate(-6deg);
+-moz-transofrm:rotate(-6deg);
+}
+
+ul li h2 {
+font-size: 20px;
+line-height:20px;
+}
+
+ul li a{
+text-decoration: none;
+color: #369;
+}
+
+ul li a:hover{
+text-decoration: none;
+color: green;
+font-weight: normal;
+}
+
+ul li:nth-child(even){
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+}
+ul li:nth-child(3n){
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+}
+ul li:nth-child(5n){
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+
+ul li {
+margin: 5px 2em;
+float: left;
+}
+
+ul li h2 {
+font-size: 140%;
+font-weight: bold;
+padding-bottom: 10px;
+font-family: "Reenie Beanie",arial,sans-serif;
+}
+
+ul li p {
+font-family: "Reenie Beanie",arial,sans-serif;
+font-size:180%;
+}
+
+ul li:nth-child(odd){
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+ul li:nth-child(3n){
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+
+.bottom a {
+  text-decoration: none;	
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="https://raw.github.com/jakecarpenter/startuporshutup/master/js/etherpad.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $("#pad").pad({
+                  'padId' : 'kRBXB8P1Ci',
+                  'host'  : 'http://notes.avaaz.org',
+                  'baseUrl' : '/'
+               });
+  $("#epframepad").css("width", "900px");
+  $("#epframepad").css("height", "600px");
+
+});  
+</script>
+ 
+  
 </head>
+
 <body>
-  <h1>Startup or Shutup 2012</h1>
-  <h2>Startup Or Shutup is a community for those who want to Get Things Done.</h2>
-  <div id="pad">This is the pad</div>
+
+<div id="wrapper">
+<br>
+<center><img src="http://i.imgur.com/slI6X.png"></center>
+<p class="slogan">
+Dec. 28th - Jan. 12. We're getting things done. 
+</p>
+
+<div class="squares">
+<ul>
+	<li>
+		
+			<h2>The Challenge</h2>
+			<p>12 Hackers. 14 days. 3 minimal viable products.	</p>
+	
+	</li>
+	<li>
+	
+			<h2>The Inspiration</h2>
+			<p><a href="http://news.ycombinator.com/item?id=3394844">Hacker News Post</a></p>
+		
+	</li>
+		<li>
+
+			<h2>The Teams</h2>
+			<br>- Better College Dating</br>
+			<br>- New Alerts Service</br>
+			<br>- Founder Matchmaking</br>
+			
+
+	</li>
+
+		
+</div>
+
+<center><div id="pad">This is the pad</div>
+<p class="bottom">Can a group of individuals from the <a href="http://news.ycombinator.com">Hacker News</a>  community come together and use their wide variety of skills to start companies?
+</p>
+</center>
+
+<br>
+
+</div>
 </body>
+</html>
